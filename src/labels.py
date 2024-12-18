@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import QApplication, QWidget, QLabel
 from PyQt6.QtGui import QPixmap, QFont
 
 # local imports
-from labels import setUpMainWindow
+
 
 class EmptyWindow(QWidget):
     def __init__(self):
