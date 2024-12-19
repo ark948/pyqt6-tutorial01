@@ -35,6 +35,7 @@ class EmptyWindow(QWidget):
             night_cb.move(40, 100)
             night_cb.toggled.connect(self.printSelected)
 
+    # ?
     def printSelected(self, checked):
         sender = self.sender()
         if checked:
