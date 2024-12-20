@@ -38,6 +38,7 @@ class EmptyWindow(QWidget):
         search_button.move(50, 100)
         search_button.clicked.connect(self.exitProgram)
     
+    # ? problem, html tags not displaying
     def searchAuthors(self):
         file = "files/authors.txt"
         try:
@@ -60,6 +61,7 @@ class EmptyWindow(QWidget):
             QMessageBox.warning(self, "Error", f"""<p>File not found.</p> <p>Error {error}</p> Closing application.""", QMessageBox.StandardButton.Ok)
             self.close()
 
+    # ? this is not the proper way
     def exitProgram(self):
         print("Program exit.")
         self.close()
