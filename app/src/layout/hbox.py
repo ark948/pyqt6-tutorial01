@@ -3,6 +3,8 @@ from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButto
 from PyQt6.QtGui import QPixmap, QFont
 
 # Horizontal Box Layout
+# IMPORTANT: layout managers cannot be parents for other widgets.
+# only widgets can be parents for other widgets
 
 class MainWindow(QWidget):
     def __init__(self):
