@@ -1,0 +1,1 @@
+{"focus": "pyqt stuff", "notes": "nothing...", "todo": ["code stuff"]}

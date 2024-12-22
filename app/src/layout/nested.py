@@ -19,7 +19,7 @@ class MainWindow(QWidget):
 
     def setUpMainWindow(self):
         info_label = QLabel("Select 2 items for lunch and their prices.")
-        info_label.setFont(QFont("Arial", 16))
+        info_label.setFont(QFont("Arial", 14))
         info_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # Create ComboBoxes
