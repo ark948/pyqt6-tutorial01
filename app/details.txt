@@ -1,1 +1,1 @@
-{"focus": "pyqt stuff", "notes": "nothing...", "todo": ["code stuff"]}
+{"focus": "pyqt stuff\nAnd shit", "notes": "nothing...", "todo": ["code stuff", "we dev"]}

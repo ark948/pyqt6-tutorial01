@@ -35,7 +35,7 @@ class MainWindow(QWidget):
 
         # Placing the widgets (left side)
         # Organize the left side widgets into column 0
-        self.main_grid = QGridLayout()
+        self.main_grid = QGridLayout() # row -> up/down, column -> left/right
         self.main_grid.addWidget(header_label, 0, 0)
         self.main_grid.addWidget(today_label, 1, 0)
         self.main_grid.addWidget(self.today_tedit, 2, 0, 3, 1) # widget will span 3 rows and 1 column
@@ -81,6 +81,7 @@ class MainWindow(QWidget):
             f.write(json.dumps(details))
 
     def closeEvent(self, event):
+        # on close, call saveWidgetValues to save/write everything into a text file
         self.saveWidgetValues()
 
     def loadWidgetValuesFromFile(self):
