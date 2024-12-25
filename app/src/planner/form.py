@@ -3,6 +3,8 @@ from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QComboBox, QSpinBox,
 from PyQt6.QtCore import Qt, QRegularExpression, QDate
 from PyQt6.QtGui import QFont, QRegularExpressionValidator
 
+# use QRegularExpressionValidator instead of QRegEx (QRegEx is old)
+
 class MainWindow(QWidget):
     def __init__(self):
         """ Constructor for Empty Window Class """
